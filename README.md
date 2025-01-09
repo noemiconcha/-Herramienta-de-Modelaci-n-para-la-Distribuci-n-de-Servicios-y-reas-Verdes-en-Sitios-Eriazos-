@@ -36,7 +36,7 @@ Este script utiliza las siguientes capas geoespaciales para calcular la cobertur
 * Área Verde (Punto) 🏞️
 * Espacio de Trabajo (GDB) 📂
 
-### Script 2. Area Mínima requerida para Destinos
+### Script 2. Area Mínima requerida para Destinos.
 Este script evalúa la proximidad y el área mínima necesaria para asignar destinos, utilizando las siguientes capas:
 * Capa Predios (Polígono)
 * Capa Sitio Eriazos (Punto)
@@ -75,14 +75,17 @@ Una vez calculada la población, los valores se normalizan utilizando el Método
 Además, este script evalúa el puntaje del área en función de su adecuación al tamaño óptimo para cada tipo de servicio. Por ejemplo, si para ubicar una comisaría se requiere un terreno de entre 200 y 500 m², y un sitio eriazo tiene 1000 m², el predio será penalizado en su ponderación final debido a que su superficie excede la necesidad óptima para ese uso específico.
 
 Finalmente, se calcula el modelo completo y se crean los campos Índice_{``nombre del servicio``} para cada servicio, los cuales reflejan la idoneidad del predio para el uso específico. La fórmula para calcular el índice se basa en los datos obtenidos en los pasos previos.
-<div style="background-color: white;>
-  <p align="center"  display: inline-block; padding: 10px;">
-    <img src="https://github.com/user-attachments/assets/754c67c5-1ee7-4a9d-bc4f-af5f721d749e" alt="image" style="background-color: white; border-radius: 5px;" />
-  </p>
-</div>
+
+<h2 align="center">
+  <img src="https://github.com/user-attachments/assets/3633c964-00f4-42e4-819b-597715472573" alt="fórmula" />
+</h2>
+
 
 
 
 El script también genera los campos Prioridad1, Prioridad2 y Prioridad3, los cuales jerarquizan los valores de los Índice_{``nombre del servicio``}. Esta jerarquización permite clasificar los predios según su idoneidad para la ubicación de cada tipo de servicio, como se muestra en la siguiente tabla:
+<h2 align="center">
+  <img src="https://github.com/user-attachments/assets/e5fa9201-af01-4338-9cf4-8c6903e1e1e6" />
+</h2>
 
 
