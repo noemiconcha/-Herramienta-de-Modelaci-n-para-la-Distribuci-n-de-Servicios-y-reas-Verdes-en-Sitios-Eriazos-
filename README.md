@@ -76,9 +76,10 @@ Además, este script evalúa el puntaje del área en función de su adecuación 
 
 Finalmente, se calcula el modelo completo y se crean los campos Índice_{``nombre del servicio``} para cada servicio, los cuales reflejan la idoneidad del predio para el uso específico. La fórmula para calcular el índice se basa en los datos obtenidos en los pasos previos.
 
-<p align="center" style="background-color: white; display: inline-block;">
-  <img src="https://github.com/user-attachments/assets/754c67c5-1ee7-4a9d-bc4f-af5f721d749e" alt="image" />
+<p align="center" style="background-color: white; display: inline-block; padding: 10px;">
+  <img src="https://github.com/user-attachments/assets/754c67c5-1ee7-4a9d-bc4f-af5f721d749e" alt="image" style="background-color: white; border-radius: 5px;" />
 </p>
+
 
 
 
