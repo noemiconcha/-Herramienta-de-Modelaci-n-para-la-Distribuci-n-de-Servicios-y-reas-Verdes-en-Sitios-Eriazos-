@@ -36,7 +36,7 @@ Este script utiliza las siguientes capas geoespaciales para calcular la cobertur
 * Área Verde (Punto) 🏞️
 * Espacio de Trabajo (GDB) 📂
 
-### Script 2. Area Mínima requerida para Destinos y Cercanias a mismos Servicios.
+### Script 2. Area Mínima requerida para Destinos
 Este script evalúa la proximidad y el área mínima necesaria para asignar destinos, utilizando las siguientes capas:
 * Capa Predios (Polígono)
 * Capa Sitio Eriazos (Punto)
@@ -66,7 +66,7 @@ La aplicación comienza con la ejecución del primer script, ***Script 1: Cobert
 
 Una vez realizado este análisis, se aplica a las capas de predios, creando un nuevo campo denominado COBERTURA_{``nombre del servicio``}. El cálculo realizado consiste en una selección por atributo en la que, si las entidades de servicio generadas por el análisis de red intersectan con los predios, el valor asignado en el campo es `0`; en caso contrario, el valor es `1`. Estos valores son utilizados como variables booleanas para el modelo.
 
-Posteriormente, se ejecuta el ***Script 2: Área Mínima Requerida para Destinos y Cercanías a los Mismos Servicios***, cuyo objetivo es evaluar la viabilidad de la construcción de los servicios en función del área del predio. Para ello, se aplica un filtro de superficie, ya que cada tipo de servicio requiere una superficie mínima específica para su construcción (por ejemplo, algunas instalaciones, como las de Parque o Salud, necesitan más espacio que otras). Este script genera los campos FA_{``nombre del servicio``} como variables booleanas que se integran en el modelo.
+Posteriormente, se ejecuta el ***Script 2: Área Mínima Requerida para Destinos ***, cuyo objetivo es evaluar la viabilidad de la construcción de los servicios en función del área del predio. Para ello, se aplica un filtro de superficie, ya que cada tipo de servicio requiere una superficie mínima específica para su construcción (por ejemplo, algunas instalaciones, como las de Parque o Salud, necesitan más espacio que otras). Este script genera los campos FA_{``nombre del servicio``} como variables booleanas que se integran en el modelo.
 
 El último paso corresponde a ***Script 3: Cálculo del Modelo***. Este script toma como entrada los resultados generados en los pasos anteriores y realiza un conteo de la población en el área de influencia de cada servicio. A continuación, se aplica un join espacial entre los sitios eriazos y su respectiva capa `PRC` (Plan Regulador Comunal) para determinar la zonificación permitida del área. Luego, se realiza otro join espacial entre los sitios eriazos y las capas de población para calcular cuánta población se encuentra alrededor de cada predio. Los resultados se almacenan en la clase de entidad SITIO_ERIAZO_{Comuna}, creando los campos TOTAL_PERS_{`nombre del servicio`}.
 
@@ -75,11 +75,11 @@ Una vez calculada la población, los valores se normalizan utilizando el Método
 Además, este script evalúa el puntaje del área en función de su adecuación al tamaño óptimo para cada tipo de servicio. Por ejemplo, si para ubicar una comisaría se requiere un terreno de entre 200 y 500 m², y un sitio eriazo tiene 1000 m², el predio será penalizado en su ponderación final debido a que su superficie excede la necesidad óptima para ese uso específico.
 
 Finalmente, se calcula el modelo completo y se crean los campos Índice_{``nombre del servicio``} para cada servicio, los cuales reflejan la idoneidad del predio para el uso específico. La fórmula para calcular el índice se basa en los datos obtenidos en los pasos previos.
-
-<p align="center" style="background-color: white; display: inline-block; padding: 10px;">
-  <img src="https://github.com/user-attachments/assets/754c67c5-1ee7-4a9d-bc4f-af5f721d749e" alt="image" style="background-color: white; border-radius: 5px;" />
-</p>
-
+<div style="background-color: white;>
+  <p align="center"  display: inline-block; padding: 10px;">
+    <img src="https://github.com/user-attachments/assets/754c67c5-1ee7-4a9d-bc4f-af5f721d749e" alt="image" style="background-color: white; border-radius: 5px;" />
+  </p>
+</div>
 
 
 
