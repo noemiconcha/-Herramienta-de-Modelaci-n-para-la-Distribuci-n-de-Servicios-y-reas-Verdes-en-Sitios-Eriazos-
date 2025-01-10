@@ -89,3 +89,6 @@ El script también genera los campos Prioridad1, Prioridad2 y Prioridad3, los cu
 </h2>
 
 
+
+## GUIA DE APLICACIÓN DE LA HERRAMIENTA
+https://usachcl-my.sharepoint.com/:v:/g/personal/noemi_concha_usach_cl/ESD54E-215xCnVVMxcCAM80BQ9W3KTEjeaxkEp7QA7Vcng?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SGNiVC
