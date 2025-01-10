@@ -5,8 +5,7 @@ DAG_DyDAT_2s_2024_SEMESTRAL
   <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Usach_P1.png" alt="logo Usach">
   </div>
  
-  <img width= "300" src="![Imagen de WhatsApp 2025-01-07 a las 18 43 05_e50f79a8](https://github.com/user-attachments/assets/3353defe-7daf-492e-9992-6e5b67625118)
-" alt= "terrabits">
+  <img width= "300" src="https://github.com/noemiconcha/-Herramienta-de-Modelaci-n-para-la-Distribuci-n-de-Servicios-y-reas-Verdes-en-Sitios-Eriazos-/blob/main/LOGO%20TERRABITS.jpg" alt= "terrabits">
 
   <p>Universidad de Santiago de Chile
 <p>Facultad de Ingeniería
